@@ -11,7 +11,7 @@
     <dependencies>
         
 <dependency>
-    <groupId>com.test</groupId>
+    <groupId>com.sampleservice</groupId>
     <artifactId>PaypalService</artifactId>
     <version>1.0-SNAPSHOT</version>
     <scope>compile</scope>
@@ -19,7 +19,7 @@
 
 <dependency>
     <groupId>com.sampleservice</groupId>
-    <artifactId>shunfeng-service</artifactId>
+    <artifactId>ShunFengService</artifactId>
     <version>1.0-SNAPSHOT</version>
     <scope>compile</scope>
 </dependency>
