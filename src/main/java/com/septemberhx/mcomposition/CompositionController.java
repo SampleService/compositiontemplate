@@ -15,14 +15,14 @@ public class CompositionController extends MObject {
     @MFunctionType
 com.sampleservice.ALiService.controller.MainController controller0;
 @MFunctionType
-com.test.cainiao-service controller1;
+com.sampleservice.cainiaoservice.controller.MainController controller1;
 
 
     @RequestMapping(path = "/test", method = RequestMethod.POST)
     @MApiFunction
     public MResponse test(@RequestBody MResponse body) {
         MResponse r0 = controller0.marketFunction(body);
-MResponse r1 = controller1.delivery_function(r0);
+MResponse r1 = controller1.payFunction(r0);
 return r1;
 
     }
