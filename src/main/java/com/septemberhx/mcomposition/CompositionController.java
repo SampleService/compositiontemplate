@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CompositionController extends MObject {
 
     @MFunctionType
-com.sampleservice.amazonservice.controller controller0;
+com.sampleservice.amazonservice.controller.MainController controller0;
 @MFunctionType
 com.sampleservice.paypalservice.controller.MainController controller1;
 
@@ -21,7 +21,7 @@ com.sampleservice.paypalservice.controller.MainController controller1;
     @RequestMapping(path = "/test", method = RequestMethod.POST)
     @MApiFunction
     public MResponse test(@RequestBody MResponse body) {
-        MResponse r0 = controller0.MainController#marketFunction(body);
+        MResponse r0 = controller0.marketFunction(body);
 MResponse r1 = controller1.deliveryFunction(r0);
 return r1;
 
