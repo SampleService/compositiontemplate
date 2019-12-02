@@ -15,7 +15,7 @@ public class CompositionController extends MObject {
     @MFunctionType
 com.sampleservice.amazonservice.controller.MainController controller0;
 @MFunctionType
-com.sampleservice.paypalservice.controller.MainController controller1;
+com.sampleservice.jindongservice.controller.MainController controller1;
 
 
     @RequestMapping(path = "/test", method = RequestMethod.POST)
