@@ -1,13 +1,13 @@
 server:
-  port: 8802
+  port: 8080
 eureka:
   instance:
-    prefer-ip-address: true #以IP地址注册到服务中心，相互注册使用IP地址
+    prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://192.168.1.104:30761/eureka
+      defaultZone: http://${MCLUSTER_IP}:${MCLUSTER_PORT}/eureka
     healthcheck:
       enabled: true
 spring:
   application:
-    name: MComposition
+    name: didi-service-paypal-service-291062325
